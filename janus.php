@@ -71,9 +71,6 @@ $candidate = $_POST['candidate'];
 if(!isset($_POST['jsep']));
 $jsep = $_POST['jsep'];
 
-//api_secret = janusrocks         ; String that all Janus requests must contain
-//admin_secret = janusoverlord 
-
 $server='http://server/janus';
 $password='janusrocks';
 
