@@ -1,4 +1,13 @@
-<?php
+/*
+ *  This file contains client side REST calls for janus-gateway
+ *  With this example you can use the admin-api in your janus infrastructure
+ *  and call it securely
+ *  
+ * This is a beta-version in php
+ * Feel free to update
+ */
+ 
+ <?php
 error_reporting(E_ALL ^ E_NOTICE);
 
 function generateRandomString($length = 12) {
