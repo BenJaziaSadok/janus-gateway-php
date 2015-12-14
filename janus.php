@@ -74,7 +74,7 @@ $jsep = $_POST['jsep'];
 //api_secret = janusrocks         ; String that all Janus requests must contain
 //admin_secret = janusoverlord 
 
-$server='http://46.16.200.66:8088/janus';
+$server='http://server/janus';
 $password='janusrocks';
 
 switch($action){
