@@ -50,26 +50,13 @@ function CallAPI($method, $url, $data = false)
     return $result;
 }
 
-if(!isset($_POST['action']));
-$action = $_POST['action'];
-
-if(!isset($_POST['sessionId']));
-$sessionId = $_POST['sessionId'];
-
-if(!isset($_POST['plugin']));
-$plugin = $_POST['plugin'];
-
-if(!isset($_POST['handleId']));
-$handleId = $_POST['handleId'];
-
-if(!isset($_POST['message']));
-$message = $_POST['message'];
-
-if(!isset($_POST['candidate']));
-$candidate = $_POST['candidate'];
-
-if(!isset($_POST['jsep']));
-$jsep = $_POST['jsep'];
+$action = !empty($_POST['action']) ? $_POST['action'] : false;
+$sessionId = !empty($_POST['sessionId']) ? $_POST['sessionId'] : false;
+$plugin = !empty($_POST['plugin']) ? $_POST['plugin'] : false;
+$handleId = !empty($_POST['handleId']) ? $_POST['handleId'] : false;
+$message = !empty($_POST['message']) ? $_POST['message'] : false;
+$candidate = !empty($_POST['candidate']) ? $_POST['candidate'] : false;
+$jsep = !empty($_POST['jsep']) ? $_POST['jsep'] : false;
 
 $server='http://server/janus';
 $password='janusrocks';
